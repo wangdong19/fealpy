@@ -72,7 +72,6 @@ class PLBFGS(Optimizer):
         options = self.options
         x = options["x0"]
         strongwolfe = StrongWolfeLineSearch()
-
         f, g = self.fun(x)
         gnorm = bm.linalg.norm(g)
         pg = g
@@ -80,7 +79,6 @@ class PLBFGS(Optimizer):
         alpha = options["StepLength"]
         if options["Print"]:
             print(f'initial: f = {f}, gnorm = {gnorm}')
-
         flag = 0 # The convergence flag
         j = 0
         for i in range(1, options["MaxIters"]):
