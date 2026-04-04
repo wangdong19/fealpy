@@ -21,7 +21,7 @@ from .nonlinear_elastic_integrator import NonlinearElasticIntegrator
 from .div_integrator import DivIntegrator
 from .viscous_work_integrator import ViscousWorkIntegrator
 from .scalar_biharmonic_integrator import ScalarBiharmonicIntegrator
-from .mthlaplace_integrator import MthLaplaceIntegrator
+from .polyharmonic_integrator import PolyharmonicIntegrator
 from .mass_integrator import MassIntegrator
 from .diffusion_integrator import DiffusionIntegrator
 from .optimal_control_integrator import OPCIntegrator
@@ -31,6 +31,7 @@ from .jump_penalty_intergrator import JumpPenaltyIntergrator
 from .spacetime_residual_integrator import SpaceTimeResidualIntegrator
 from .spacetime_source_residual_integrator import SpaceTimeSourceResidualIntegrator
 from .coupling_mass_integrator import CouplingMassIntegrator
+from .grad_pressure_integrator import GradPressureIntegrator
 
 ### Cell Source
 from .cell_source_integrator import CellSourceIntegrator

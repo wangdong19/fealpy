@@ -42,7 +42,7 @@ options = vars(parser.parse_args())
 from fealpy.backend import bm
 bm.set_backend(options['backend'])
 
-from fealpy.fem.polyharmonic_sfem_model import PolyharmonicCrFEMModel
+from fealpy.fem.polyharmonic_cr_fem_model import PolyharmonicCrFEMModel
 model = PolyharmonicCrFEMModel(options)
 model.solve()
 model.error()
